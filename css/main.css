@@ -96,7 +96,141 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ==========================================================================
+   Fuentes: Titilium Web, Ubuntu, Open Sans. 
+   --------------------------------------------------------------------------
+   */
+
+
+html{
+    box-sizing: border-box;
+}  
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: #f2f2f2;
+    font-family: 'Ubuntu', Verdana, sans-serif;
+}
+h1.nombre-sitio{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 5.9vw;
+}
+p.slogan{
+    text-align: center;
+    text-transform: none!important;
+}
+p.slogan span{
+    font-weight: bold;
+}
+/*  ==========================================================================
+    GLOBALES */
+
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+}
+@media (min-width: 400px){
+    .contenedor{
+        width: 98%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px){
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px){
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/*  ==========================================================================
+    HEADER */
+div.hero{
+    background-image: url(../img/pvaras.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover; 
+}
+div.contenido-header{
+    padding-top: 40px;
+}
+@media (min-width: 400px){
+    .nombre-sitio{
+        font-size: 30px;
+    }
+    div.contenido-header{
+        padding-top: 10px;
+    }
+}
+nav.redes-sociales{
+    text-align: center;
+}
+nav.redes-sociales a{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+nav.redes-sociales a:last-child{
+    margin-right: 0;
+}
+div.informacion-evento{
+    text-align: center;
+    color: #f1f1f1;
+}
+div.informacion-evento p{
+    margin: 0;
+    display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+div.informacion-evento p i{
+    color: #fe4918;
+    font-size: 2rem;
+}
+p.fecha{
+    float: left;
+}
+p.ciudad{
+    float: right;
+}
+
+@media (min-width: 400px){
+    div.informacion-evento{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px){
+    h1.nombre-sitio{
+        font-size: 8.5vw;
+        text-transform: uppercase;
+        font-family: 'Titillium Web', sans-serif;
+        margin: 0;
+        line-height: 1;
+    }
+}
+/*  ==========================================================================
+    BARRA + LOGO + MENU NAV */
+div.barra{
+    background-color:rgb(40,44,52);
+}
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
