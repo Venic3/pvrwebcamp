@@ -363,14 +363,27 @@ nav.navegacion-principal a:last-child:hover{
 /* MENU MOVIL =============*/
 div.menu-movil{
     width: 60px;
+    display: block;
     float: right;
     text-align: right;
+    margin-top: 12px;
+}
+
+div.menu-movil span{
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: white;
+    display: block;
+    border-radius: .2rem;
 }
 div.menu-movil:hover{
     cursor: pointer;
 }
 
 @media (min-width: 480px){
+    div.logo{
+        float: left;
+    }
     nav.navegacion-principal{
         display: none;
     }
@@ -385,7 +398,6 @@ div.menu-movil:hover{
         margin-right: -10px;
         margin-bottom: 30px;
         background-color: white;
-        display: float;
         margin: 1;
         position: relative;
         border-radius: .2rem;
@@ -398,6 +410,7 @@ div.menu-movil:hover{
 @media (min-width: 768px){
     div.logo{
         width: 50%;
+        float: left;
     }
     div.menu-movil{
         width: 50px;
@@ -407,8 +420,7 @@ div.menu-movil:hover{
         text-align: right;
         margin-top: 12px;
         margin: 0;
-        position: relative;
-        
+        position: relative;   
     }
     div.menu-movil span{
         height: 8px;
@@ -431,14 +443,6 @@ div.menu-movil:hover{
         display: float;
         margin-bottom: 10px;
     }
-}
-
-div.menu-movil span{
-    height: 8px;
-    margin-bottom: 6px;
-    background-color: white;
-    display: block;
-    border-radius: .2rem;
 }
 
 @media (min-width: 992px){
