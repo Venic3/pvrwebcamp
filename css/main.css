@@ -368,7 +368,6 @@ div.menu-movil{
     text-align: right;
     margin-top: 12px;
 }
-
 div.menu-movil span{
     height: 8px;
     margin-bottom: 6px;
@@ -382,22 +381,25 @@ div.menu-movil:hover{
 
 @media (min-width: 480px){
     div.logo{
+        width: 60%;
         float: left;
     }
     nav.navegacion-principal{
         display: none;
     }
     div.menu-movil{
-        display: float;
-        margin-bottom: 10px;
+        display: inline-block;
+        margin-top: -5px;
+        margin-bottom: 20px;
     }
     div.menu-movil span{
-        height: 5px;
-        margin-top: -25px;
-        margin-left: 30px;
-        margin-right: -10px;
-        margin-bottom: 30px;
+        width: 45px;
+        height: 6px;
+        margin-top:  5px;
+        margin-left:  5px;
+        margin-bottom:z 6px;
         background-color: white;
+        display: float-right;
         margin: 1;
         position: relative;
         border-radius: .2rem;
@@ -424,8 +426,8 @@ div.menu-movil:hover{
     }
     div.menu-movil span{
         height: 8px;
-        margin-top: -25px;
-        margin-left: 15px;
+        margin-top:  5px;
+        margin-left:  5px;
         margin-bottom: 6px;
         background-color: white;
         display: float-right;
@@ -453,13 +455,12 @@ div.menu-movil:hover{
         display: none;
     }
     nav.navegacion-principal{
-        display: inline-block;
+        display: block;
+
     }
     nav.navegacion-principal a{
-        margin-bottom: 10px;
-        margin-top: -7px;
+        margin-bottom: 20px;
     }
-    
 }
 
 
