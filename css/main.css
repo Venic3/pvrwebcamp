@@ -118,13 +118,13 @@ h1.nombre-sitio{
 }
 p.slogan{
     text-align: center;
+    margin-top: 5px;
     text-transform: none!important;
 }
 p.slogan span{
     font-weight: bold;
 }
-/*  ==========================================================================
-    GLOBALES */
+/*  =============== GLOBALES */
 
 .contenedor{
     width: 95%;
@@ -152,8 +152,7 @@ p.slogan span{
 }
 
 
-/*  ==========================================================================
-    HEADER */
+/*  ====== HEADER */
 div.hero{
     background-image: url(../img/pvaras.jpg);
     height: 100vh;
@@ -191,7 +190,7 @@ nav.redes-sociales a:last-child{
 }
 nav.redes-sociales a:hover{
     color: rgb(255, 202, 26);
-    font-size: 25px;
+    font-size: 2rem;
     transition: all .2s ease;
 }
 
@@ -223,7 +222,8 @@ p.ciudad{
         margin-top: 50px;
     }
     h1.nombre-sitio{
-        font-size: 10vw;
+        font-size: 50px;
+        text-align: center;
         text-transform: uppercase;
         font-family: 'Titillium Web', sans-serif;
         margin: 0;
@@ -240,16 +240,16 @@ p.ciudad{
         line-height: 1;
     }
 }
-/*  ==========================================================================
-    BARRA + LOGO + MENU NAV */
+/*  === BARRA + LOGO + MENU NAV */
 div.barra{
     background-color: rgb(40,44,52);
-    padding: 20px 0;
+    padding: 10px 0;
     height: 80px;
 }
 div.logo{
     width: 80%;
     float: left;
+    margin-top: 15px;
 }
 div.logo img{
     width: 90%;
@@ -263,7 +263,6 @@ div.logo img{
         float: left;
     }
     menu-movil{
-        display: inline-block;
         float: right;
     }
     nav.navegacion-principal{
@@ -275,6 +274,7 @@ div.logo img{
     div.logo{
         width: 80%;
         float: left;
+        margin-top: 5px;
     }
     menu-movil{
         display: inline-block;
@@ -287,10 +287,11 @@ div.logo img{
 @media (min-width: 992px){
     nav.navegacion-principal{
         display: inline-block;
-        margin-top: 0;
+        margin-top: 5px;
     }    
     div.logo{
         width: 33%;
+        padding-top: 10px;
     }
     menu-movil{
         display: none;
@@ -309,7 +310,7 @@ nav.navegacion-principal a{
     text-decoration: none;
     text-transform: uppercase;
     transition: all .4s ease;
-    border: 1px;
+    border: .5px;
     width: auto;
     text-align: center;
     margin: 0 10px 0 0;
@@ -321,21 +322,21 @@ nav.navegacion-principal a{
 
 nav.navegacion-principal a:hover{
     background-color: #fe4918;
-    border: 1px solid;
+    border: .5px;
     border-color: #fe4918;
     color: rgba(255,255,255,.9);
     transition: all .3s ease;
 }
 nav.navegacion-principal a:last-child{
     background-color: rgb(40,44,52);
-    border: 1px solid;
+    border: .5px solid;
     border-color: #be4220;
     font-weight: bolder;  
     text-shadow: 2rem;
 }
 nav.navegacion-principal a:last-child:hover{
     color: #ffffff;
-    border: 1px solid;
+    border: .5px solid;
     font-weight: bolder;   
     border-color: #700A02;
     background-color: #700A02;
@@ -360,7 +361,7 @@ nav.navegacion-principal a:last-child:hover{
     }
 }
 
-/* MENU MOVIL =============*/
+/* MENU MOVIL (Nativo: MobileFirst */
 div.menu-movil{
     width: 60px;
     display: block;
@@ -368,46 +369,24 @@ div.menu-movil{
     text-align: right;
     margin-top: 12px;
 }
+
 div.menu-movil span{
-    height: 8px;
+    width: 45px;
+    height: 6px;
+    margin-top:  5px;
+    margin-left:  5px;
     margin-bottom: 6px;
     background-color: white;
-    display: block;
+    margin: 1;
+    position: relative;
     border-radius: .2rem;
+    float: left;
 }
 div.menu-movil:hover{
     cursor: pointer;
 }
 
-@media (min-width: 480px){
-    div.logo{
-        width: 60%;
-        float: left;
-    }
-    nav.navegacion-principal{
-        display: none;
-    }
-    div.menu-movil{
-        display: inline-block;
-        margin-top: -5px;
-        margin-bottom: 20px;
-    }
-    div.menu-movil span{
-        width: 45px;
-        height: 6px;
-        margin-top:  5px;
-        margin-left:  5px;
-        margin-bottom:z 6px;
-        background-color: white;
-        display: float-right;
-        margin: 1;
-        position: relative;
-        border-radius: .2rem;
-    }
-    div.menu-movil:hover{
-        cursor: pointer;
-    }
-}
+
 
 @media (min-width: 768px){
     div.logo{
@@ -425,12 +404,12 @@ div.menu-movil:hover{
         position: relative;   
     }
     div.menu-movil span{
-        height: 8px;
+        width: 45px;
+        height: 6px;
         margin-top:  5px;
         margin-left:  5px;
         margin-bottom: 6px;
         background-color: white;
-        display: float-right;
         margin: 1;
         position: relative;
         border-radius: .2rem;
@@ -441,17 +420,13 @@ div.menu-movil:hover{
     nav.navegacion-principal{
         display: none;
     }
-    div.menu-movil{
-        display: float;
-        margin-bottom: 10px;
-    }
 }
 
 @media (min-width: 992px){
     div.logo{
         width: 30%;
     }
-    div.menu-movil span{
+    div.menu-movil{
         display: none;
     }
     nav.navegacion-principal{
