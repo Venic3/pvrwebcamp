@@ -117,6 +117,7 @@ h1.nombre-sitio{
     font-size: 5.9vw;
 }
 p.slogan{
+    font-size: 4vw;
     text-align: center;
     margin-top: 5px;
     text-transform: none!important;
@@ -167,10 +168,11 @@ div.contenido-header{
         margin-left: -40px;
     }
     p.ciudad{
+        font-size: 1.5rem!important;
         margin-right: 5px;
     }
     h1.nombre-sitio{
-        font-size: 30px;
+        font-size: 5.9vw;
         margin-left: -10px;
     }
     div.contenido-header{
@@ -189,7 +191,7 @@ nav.redes-sociales a:last-child{
     margin-right: 0;
 }
 nav.redes-sociales a:hover{
-    color: rgb(255, 202, 26);
+    color: rgb(96, 105, 133);
     font-size: 2rem;
     transition: all .2s ease;
 }
@@ -221,6 +223,7 @@ p.ciudad{
         margin: 0 auto;
         margin-top: 50px;
     }
+
     h1.nombre-sitio{
         font-size: 50px;
         text-align: center;
@@ -243,41 +246,62 @@ p.ciudad{
 /*  === BARRA + LOGO + MENU NAV */
 div.barra{
     background-color: rgb(40,44,52);
-    padding: 10px 0;
+    /*padding: 10px 0; */
+    margin-bottom: 10px;
     height: 80px;
 }
 div.logo{
     width: 80%;
     float: left;
     margin-top: 15px;
+    margin-bottom: 5px;
 }
 div.logo img{
     width: 90%;
     padding: 5px;
-    margin-top: -10px;
 }
 
 @media (min-width: 480px){
     div.logo{
         width: 80%;
         float: left;
+        margin-top: -3px;
+        padding-top: 10px;
     }
     menu-movil{
         float: right;
+        margin-top: 20px;
     }
+
+    p.fecha, p.ciudad{
+        font-size: .7rem;
+    }
+    
+
     nav.navegacion-principal{
-        display: none;
+       text-align: center;
+       padding: 20px;
+       margin-top: 60px;
+    } 
+
+    nav.navegacion-principal a{
+        padding: 5px;
+        margin-top: 10px;
+        border-top: 5px;
+        margin-bottom: 10px;
     }
 }
 
 @media (min-width: 768px){
     div.logo{
-        width: 80%;
+        width: 50%;
         float: left;
-        margin-top: 5px;
+        margin-top: -5px;
     }
-    menu-movil{
-        display: inline-block;
+    div.menu-movil{
+        float: right;
+        margin-top: -5px;
+        position: 0 0 0 0;
     }
     
     nav.navegacion-principal{
@@ -287,10 +311,12 @@ div.logo img{
 @media (min-width: 992px){
     nav.navegacion-principal{
         display: inline-block;
-        margin-top: 5px;
+        margin-top: -15px;
     }    
     div.logo{
-        width: 33%;
+        display: block;
+        width: 70%;
+        margin-top: -3px;
         padding-top: 10px;
     }
     menu-movil{
@@ -311,12 +337,10 @@ nav.navegacion-principal a{
     text-transform: uppercase;
     transition: all .4s ease;
     border: .5px;
-    width: auto;
+    width: auto; /*Cambiar a 100% sólo para casos puntuales*/
     text-align: center;
-    margin: 0 10px 0 0;
     display: block;
     clear: both;
-    margin-bottom: 10px;
     border-radius: .5rem;
 }
 
