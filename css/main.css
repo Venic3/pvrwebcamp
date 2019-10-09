@@ -329,16 +329,16 @@ nav.navegacion-principal a:hover{
 }
 nav.navegacion-principal a:last-child{
     background-color: rgb(40,44,52);
-    border: .5px solid;
+    border: .8px solid;
     border-color: #be4220;
     font-weight: bolder;  
     text-shadow: 2rem;
 }
 nav.navegacion-principal a:last-child:hover{
     color: #ffffff;
-    border: .5px solid;
+    border: .8px solid;
     font-weight: bolder;   
-    border-color: #700A02;
+    border-color: rgb(233, 21, 6);
     background-color: #700A02;
     transition: all .3s ease;
 }
