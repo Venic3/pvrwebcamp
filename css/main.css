@@ -134,7 +134,10 @@ p.slogan span{
 @media (min-width: 400px){
     .contenedor{
         width: 98%;
-        margin: 0 auto;
+        margin: auto;
+    }
+    nav.navegacion-principal{
+        display: none;
     }
 }
 
@@ -178,6 +181,10 @@ div.contenido-header{
     div.contenido-header{
         padding-top: 10px;
     }
+    nav.navegacion-principal a{
+        display: none;
+        width: 90%;
+    }
 }
 nav.redes-sociales{
     text-align: center;
@@ -187,9 +194,7 @@ nav.redes-sociales a{
     font-size: 2rem;
     margin-right: 20px;
 }
-nav.redes-sociales a:last-child{
-    margin-right: 0;
-}
+
 nav.redes-sociales a:hover{
     color: rgb(96, 105, 133);
     font-size: 2rem;
@@ -272,18 +277,15 @@ div.logo img{
         float: right;
         margin-top: 20px;
     }
-
     p.fecha, p.ciudad{
         font-size: .7rem;
     }
-    
-
     nav.navegacion-principal{
        text-align: center;
-       padding: 20px;
        margin-top: 60px;
+       background: rgb(40,44,52);
+       width: 100%;
     } 
-
     nav.navegacion-principal a{
         padding: 5px;
         margin-top: 10px;
@@ -311,7 +313,9 @@ div.logo img{
 @media (min-width: 992px){
     nav.navegacion-principal{
         display: inline-block;
-        margin-top: -15px;
+        margin-top: 10px;
+        padding-top: -7px;
+        margin-bottom: -5px;
     }    
     div.logo{
         display: block;
@@ -322,7 +326,13 @@ div.logo img{
     menu-movil{
         display: none;
     }
-
+    nav.navegacion-principal a{
+        padding: 5px;
+        margin-top: 0px;
+        height: 50px;
+        border-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 /* Navegacion Principal */
@@ -381,7 +391,8 @@ nav.navegacion-principal a:last-child:hover{
     }
     div.menu-movil span{
         display: float;
-        position: relative;
+        position: 5 0 5 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -423,16 +434,19 @@ div.menu-movil:hover{
         display: block;
         float: right;
         text-align: right;
-        margin-top: 12px;
+        margin-top: 20px;
+        padding-top: 20px;
         margin: 0;
         position: relative;   
     }
     div.menu-movil span{
         width: 45px;
         height: 6px;
-        margin-top:  5px;
-        margin-left:  5px;
-        margin-bottom: 6px;
+        border-top: 10px;
+        margin-top:  3px;
+        margin-left:  px;
+        margin-bottom: 3px;
+        position: 10 0 0 0;
         background-color: white;
         margin: 1;
         position: relative;
@@ -458,11 +472,35 @@ div.menu-movil:hover{
 
     }
     nav.navegacion-principal a{
-        margin-bottom: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
+.seccion{
+    padding: 30px 0;    
+}
+.seccion p{
+    font-size: 1.2em;
+    text-align: center;
+}
 
+
+h2{
+    font-family: 'Open Sans', Verdana,sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2::after{
+    content:''; /*Ley: No debe ser NULL*/
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
 
 
 /* ==========================================================================
