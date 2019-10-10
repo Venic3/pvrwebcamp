@@ -112,6 +112,11 @@ body{
     background-color: #f2f2f2;
     font-family: 'Ubuntu', Verdana, sans-serif;
 }
+video{
+    min-width: 400px;
+    max-width: widescreen;
+}
+
 h1.nombre-sitio{
     font-family: 'Titillium Web', sans-serif;
     font-size: 5.9vw;
@@ -139,6 +144,9 @@ p.slogan span{
     nav.navegacion-principal{
         display: none;
     }
+    .contenedor-video{
+        width: 40%;
+    }
 }
 
 @media (min-width: 768px){
@@ -146,12 +154,18 @@ p.slogan span{
         width: 90%;
         margin: 0 auto;
     }
+    .contenedor-video{
+        width: 60%;
+    }
 }
 
 @media (min-width: 992px){
     .contenedor{
         width: 90%;
         margin: 0 auto;
+    }
+    .contenedor-video{
+        width: 100%;
     }
 }
 
@@ -167,11 +181,15 @@ div.contenido-header{
     padding-top: 40px;
 }
 @media (min-width: 480px){
+    nav.redes-sociales a{
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
     div.contenido-header{
         margin-left: -40px;
     }
     p.ciudad{
-        font-size: 1.5rem!important;
+        font-size: 1.5rem !important;
         margin-right: 5px;
     }
     h1.nombre-sitio{
@@ -500,6 +518,28 @@ h2::after{
     height: 30px;
     width: 100px;
     display: block;
+}
+
+/* Talleres */
+section.programa{
+    position: relative;
+}
+div.contenedor-video{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+div.contenedor-video video{
+    width: 100%;
+}
+div.contenido-programa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+div.programa-evento{
+    background-color: rgba(255,255,255,.8);
 }
 
 
