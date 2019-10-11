@@ -204,6 +204,7 @@ div.contenido-header{
         width: 90%;
     }
 }
+
 nav.redes-sociales{
     text-align: center;
 }
@@ -212,13 +213,11 @@ nav.redes-sociales a{
     font-size: 2rem;
     margin-right: 20px;
 }
-
 nav.redes-sociales a:hover{
     color: rgb(96, 105, 133);
     font-size: 2rem;
     transition: all .2s ease;
 }
-
 div.informacion-evento{
     text-align: center;
     color: #f1f1f1;
@@ -323,7 +322,6 @@ div.logo img{
         margin-top: -5px;
         position: 0 0 0 0;
     }
-    
     nav.navegacion-principal{
         display: none;
     }
@@ -439,8 +437,6 @@ div.menu-movil:hover{
     cursor: pointer;
 }
 
-
-
 @media (min-width: 768px){
     div.logo{
         width: 50%;
@@ -521,7 +517,7 @@ h2::after{
 }
 
 h3{
-    font-size: 1.8em;
+    font-size: 1em;
     color: #fe4918;
     font-family: 'Ubuntu', Verdana, sans-serif;
     margin: 0;
@@ -543,6 +539,7 @@ h3{
 }
 .button:hover{
     background-color: #e33000;
+    font-weight: 400;
     transition: all .2s ease;
 }
 
@@ -552,7 +549,8 @@ h3{
 
 /* Talleres */
 section.programa{
-    position: relative;
+    position: relative; /* URG !!!!! */
+    margin-bottom: 100px;
 }
 div.contenedor-video{
     max-width: 100%;
@@ -640,6 +638,12 @@ div.detalle-evento{
 div.detalle-evento:last-child(2){
 /*Debería ser NTH-CHILD, falta 1 borde*/
     border: none;
+}
+
+/*--  SECCION INVITADOS  --*/
+
+.invitados{
+    position: relative;
 }
 
 /* ....................................................................... */
