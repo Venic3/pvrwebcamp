@@ -607,6 +607,8 @@ section.programa {
     margin-bottom: 100px;
 }
 
+
+
 div.contenedor-video {
     max-width: 100%;
     overflow-x: hidden;
@@ -828,6 +830,22 @@ p.numero {
     }
 }
 
+/* Lista Precios */
+ul.lista-precios > li{
+    padding: 10px;
+}
+@media (min-width: 768px){
+    ul.lista-precios > li{
+        float: left;
+        width: 33.3%;
+    }
+}
+div.tabla-precio{
+    border: 1px solid #E1E1E1;
+    background-color: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+}
 
 /* ....................................................................... */
 
