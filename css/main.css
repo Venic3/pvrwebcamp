@@ -924,15 +924,15 @@ div.testimonial{
 }
 blockquote{
     background-color: #ffffff;
-    border: 1px solid #E1E1E1;
+    border: 1px solid rgba(225, 225, 225, 0.63);
     position: relative;
     font-style: italic;
     margin: 0 0 10px 0;
     padding-bottom: 20px;
 }
 blockquote p {
-    text-align: left !important;
-    font-size: 1em !important;
+    text-align: right!important;
+    font-size: 1em!important;
     font-family: 'Ubuntu', sans-serif;
     padding: 0 20px 0 65px;
 }
@@ -955,7 +955,25 @@ footer.info-testimonial img{
     float: left;
     width: 20%;
     border-radius: 50%;
+    margin-left: 20px;
 }
+footer.info-testimonial cite{
+    text-align: left;
+    color: #fe4918;
+    text-transform: uppercase;
+    padding-top: 28px;
+    width: 66.6%;
+    float: right;
+    font-weight: bold;
+    font-style: normal;
+}
+footer.info-testimonial cite span{
+    color: #000000;
+    display: block;
+    text-transform: none;
+    margin-top: 5px;
+}
+
 /* ....................................................................... */
 
 
