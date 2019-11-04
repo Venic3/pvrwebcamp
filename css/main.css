@@ -297,10 +297,8 @@ p.ciudad {
 
 
 /*  === BARRA + LOGO + MENU NAV */
-
 div.barra {
     background-color: rgb(40, 44, 52);
-    /*padding: 10px 0; */
     margin-bottom: 10px;
     height: 80px;
 }
@@ -389,7 +387,6 @@ div.logo img {
 
 
 /* Navegacion Principal */
-
 nav.navegacion-principal a {
     padding: 10px 10px;
     font-family: 'Ubuntu', sans-serif;
@@ -455,7 +452,6 @@ nav.navegacion-principal a:last-child:hover {
 
 
 /* MENU MOVIL (Nativo: MobileFirst) */
-
 div.menu-movil {
     width: 60px;
     display: block;
@@ -615,24 +611,15 @@ ul {
 
 
 /* Talleres */
-
 section.programa {
     position: relative;
-    /* URG !!!!! */
-    margin-bottom: 100px;
+
 }
-
-
 
 div.contenedor-video {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-div.contenedor-video video {
-    width: 100%;
-}
-
 div.contenido-programa {
     position: absolute;
     top: 0;
@@ -640,6 +627,11 @@ div.contenido-programa {
     height: 100%;
     width: 100%;
 }
+div.contenedor-video video {
+    max-width: 120%;
+}
+
+
 
 div.programa-evento {
     background-color: rgba(255, 255, 255, .8);
@@ -678,7 +670,7 @@ nav.menu-programa {
         display: table;
     }
 }
-@media (min-width: 1100px){
+@media (min-width: 992px){
     div.contenido-programa{
         position: absolute;
         left: 0;
@@ -822,12 +814,12 @@ div.contador {
 div.contador:before {
     background-image: url(../img/bg-resumenV3.jpg);
     background-color: rgba(0, 0, 0, 0.55);
-    content: '';
+    content:'';
 }
 
 ul.resumen-evento {
     position: relative;
-    padding: 120px 0;
+    padding: 140px 0;
 }
 
 ul.resumen-evento li {
@@ -839,6 +831,12 @@ ul.resumen-evento li {
     font-family: 'Ubuntu', Tahoma, Verdana;
     font-size: 24px;
 }
+@media (min-width: 768px){
+    ul.resumen-evento li{
+        width: 25%;
+    }
+}
+
 
 p.numero {
     color: #fe4918;
@@ -900,7 +898,7 @@ div.tabla-precio ul li{
 }
 
 /*CHECK VERDE: NO FUNCIONA AUN */
-/*div.tabla-precio ul li:before{
+div.tabla-precio ul li::before {
     font-family: 'Font Awesome 5 Free';
     display: inline-block;
     vertical-align: top;
@@ -908,8 +906,9 @@ div.tabla-precio ul li{
     font-size: 20px;
     color: green;
     -webkit-font-smoothing: antialiased;
-    content:'\f000c';
-}*/
+    font-weight: 900;
+    content: '\f00c';
+}
 
 div.tabla-precio h3{
     font-family: 'Titillium web', Tahoma, sans-serif;
@@ -990,7 +989,8 @@ footer.info-testimonial cite span{
 /* -- NEWSLETTER -- */
 div.newsletter {
     position: relative;
-    height: auto;
+    height: 300px;
+    padding: 0;
 }
 div.newsletter::before{
     background-image: url(../img/bg-newsletter.jpg);
@@ -1005,6 +1005,9 @@ div.newsletter .contenido{
 div.newsletter .contenido p{
     font-size: 1.2rem;
     text-transform: lowercase;
+}
+div.newsletter .registrate{
+    
 }
 div.newsletter .contenido h3{
     color:  #b6b6b6;
