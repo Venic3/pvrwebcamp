@@ -263,10 +263,12 @@ div.informacion-evento p i {
 
 p.fecha {
     float: left;
+    font-size: 2vw;
 }
 
 p.ciudad {
     float: right;
+    font-size: 2vw;
 }
 
 @media (min-width: 400px) {
@@ -328,7 +330,7 @@ div.logo img {
     }
     p.fecha,
     p.ciudad {
-        font-size: .7rem;
+        font-size: 2vw;
     }
     nav.navegacion-principal {
         text-align: center;
@@ -1042,7 +1044,7 @@ div.cuenta-regresiva ul li{
 }
 footer .contenedor > div {
     color: #ffffff;
-    padding: 0px 20px;
+    padding: 0px 20px 20px 0px;
     font-size: 12px;
     text-align-last: justify;
 }
