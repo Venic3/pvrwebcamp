@@ -587,8 +587,9 @@ h3 {
     color: white;
     font-weight: 700;
 }
-button.transparente{
-    background-color: #E33000;
+.button.transparente{
+    background-color: transparent;
+    border: 2px solid #777;
 }
 
 
@@ -897,7 +898,6 @@ div.tabla-precio ul li{
     line-height: 26px;
 }
 
-/*CHECK VERDE: NO FUNCIONA AUN */
 div.tabla-precio ul li::before {
     font-family: 'Font Awesome 5 Free';
     display: inline-block;
@@ -989,7 +989,7 @@ footer.info-testimonial cite span{
 /* -- NEWSLETTER -- */
 div.newsletter {
     position: relative;
-    height: 300px;
+    height: 400px;
     padding: 0;
 }
 div.newsletter::before{
@@ -1006,9 +1006,7 @@ div.newsletter .contenido p{
     font-size: 1.2rem;
     text-transform: lowercase;
 }
-div.newsletter .registrate{
-    
-}
+
 div.newsletter .contenido h3{
     color:  #b6b6b6;
     text-transform: uppercase;
