@@ -1046,7 +1046,6 @@ footer .contenedor > div {
     color: #ffffff;
     padding: 0px 20px 20px 0px;
     font-size: 12px;
-    text-align-last: justify;
 }
 @media (min-width: 768px){
     footer .contenedor > div {
@@ -1059,12 +1058,16 @@ footer h3{
     text-transform: uppercase;
     font-family: 'Titillium Web', Tahoma;
     margin-bottom: 20px;
+    text-align: left;
 }
 footer h3 span{
     color: #fe4918;
 }
 footer .ultimos-tweets li{
     margin-bottom: 10px;
+}
+footer nav.redes-sociales {
+    text-align: left;
 }
 p.copyright{
     background-color: rgb(20, 22, 26);
