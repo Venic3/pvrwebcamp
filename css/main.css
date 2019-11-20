@@ -226,6 +226,21 @@ div.contenido-header {
     }
 }
 
+@media (max-width: 768px){
+    div.footer-informacion{
+        margin-left: 20px;
+        text-align: justify;
+    }
+    div.ultimos-tweets{
+        margin-left: 20px;
+        text-align: justify;
+    }
+    div.menu{
+        margin-left: 20px;
+        text-align: justify;
+    }
+}
+
 nav.redes-sociales {
     text-align: center;
 }
